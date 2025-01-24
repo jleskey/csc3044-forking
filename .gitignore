@@ -1,7 +1,8 @@
 # Compiled binary files
-
 dist/
 
 # macOS
-
 .DS_Store
+
+# Locks
+.~lock.*
