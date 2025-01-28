@@ -21,6 +21,7 @@ int main() {
 
     if (fork() != 0) {	/* create child process */
         /* parent branch */
+        printf("Parent Parent ID = %d\n", getppid());
         for (k=1; k<5; k++) {
             delay (1000000);	/* kill time */
             printf("Parent PID = %d\n", getpid());
@@ -28,6 +29,7 @@ int main() {
     }
     else {
         /* child branch */
+        printf("Child Parent ID = %d\n", getppid());
         for (k=1; k<5; k++) {
             delay (1000000);	/* kill time here too */
             printf("Child PID = %d\n", getpid());
