@@ -42,7 +42,7 @@ int main() {
         // Try to avoid concurrency issues.
         delay (10000000);
 
-        char input[3] = "C";
+        char input[2] = "C";
         while (input[0] != 'Q') {
             printf("Child paused, enter C to continue, or Q to quit: ");
             if (fgets(input, sizeof(input), stdin) != NULL) {
